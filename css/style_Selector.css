@@ -1,0 +1,14 @@
+body {
+    background-color: bisque;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.Green{
+    color: darkgreen;
+}
+#p1 {
+    font-size: 30px;
+}
