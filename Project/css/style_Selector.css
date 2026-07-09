@@ -12,3 +12,10 @@ body {
 #p1 {
     font-size: 30px;
 }
+.Big {
+    font-size: 50px;
+}
+.contaner{
+    text-transform: uppercase;
+    color: limegreen;
+}
