@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_forma.css">
+    <title>Form</title>
+</head>
+<body>
+<form action="#" method="get">
+    <fieldset id="fieldset">
+        <legend>Personal data</legend>
+        <p>
+            <label for="fName"> First Name*:</label>
+            <input type="text" id="fName" name="fName"
+                   placeholder="Peter" required>
+        </p>
+        <p>
+            <label for="lName">Last Name*:</label>
+            <input type="text" id="lName" name="lName"
+                   placeholder="Parker" required>
+        </p>
+        <fieldset id="fieldset2">
+            <legend>Contacts</legend>
+            <p>
+                <label for="email">Email*:
+                    <input type="email" id="email" name="email"
+                           placeholder="peter.parker@example.com" required>
+                </label>
+            </p>
+            <p>
+                <label for="email">Telephone*:
+                    <input type="tel" id="telephone" name="telephone"
+                           placeholder="123-456-7890" required>
+                </label>
+            </p>
+            <p>
+                <label for="number">Number*:
+                    <input type="number" id="number" name="number" min="3" max="25" step="3"
+                           placeholder="1234567890" required>
+
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="password">Password*:
+                <input type="password" id="password" name="password"
+                       placeholder="********" required>
+            </label>
+        </p>
+        <div>
+            <span>Gender:</span>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <p>
+            <span>Hobby:</span>
+            <label>
+                <input type="checkbox" name="reading">
+                reading
+            </label>
+            <label>
+                <input type="checkbox" name="traveling">
+                traveling
+            </label>
+            <label>
+                <input type="checkbox" name="gaming">
+                gaming
+            </label>
+        </p>
+        <p>
+            <label for="language">Language:</label>
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="he">Hebrew</option>
+                <option value="ru">Russian</option>
+            </select>
+        </p>
+        <p>
+            <label for="birthdate">Date of birth:</label>
+            <input type="date" id="birthdate" name="dob">
+        </p>
+        <p>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" min="09:00" max="19:00" step="7200">
+        </p>
+
+        <p>
+            <label for="cmt">Comment:</label><br>
+            <textarea name="comment" id="cmt" cols="30" rows="10" maxlength="250" minlength="10"
+                      required></textarea>
+        </p>
+    </fieldset>
+    <button type="submit">Send</button>
+    <button type="reset">Reset</button>
+    <button type="button">Next</button>
+    <button type="button">Prev</button>
+    <button type="button" onclick="alert('Alarm-Alarm!!!!')">Alert</button>
+    <button type="button" onclick="document.getElementById('fName').value = ''">Clear First Name</button>
+</form>
+</body>
+</html>
